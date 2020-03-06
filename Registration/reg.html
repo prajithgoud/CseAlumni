@@ -1,0 +1,113 @@
++--<!DOCTYPE html>
+<html>
+
+<head>
+  <title>OU CSE Alumni</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="nav.css">
+  
+  <link rel="stylesheet" type="text/css" href="reg.css">
+  <script type="text/javascript" src="validate.js"></script>
+
+   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+   
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> -->
+  <link rel="stylesheet" type="text/css" href="all.css">
+  <script type="text/javascript" src="all.js"></script>
+</head>
+<body>
+
+  <div style="font-family: verdana; min-width:1024px;" id="main">
+
+    <nav id="nav" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          <img class="navbar-brand text-center center-block" id="img" style="width: 110px" src="logo2.png">
+        
+    
+            <a href="#" id="name"  class="navbar-brand"><font face="rabelo" size=6><b> OU CSE Alumni Association </b></font></a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-nav-demo">
+            
+            <ul id="ab" class="nav navbar-nav navbar-right">
+              <li><a href="..\Home\home.html">Home &nbsp;<i class="fas fa-home"></i></a></li>
+              <li><a href="aboutus.html">Info  &nbsp;<i class="fas fa-info"></i></a>
+                <ul class="dropdown">
+                  <li><a href="..\About Us\aboutus.html">About Us</a></li>
+                  <li><a href="..\Contact Form Alumni\contactus1.html">Contact Us</a></li>
+                  <li><a href="..\meet-the-team\index.html">Executive Body</a></li>
+                </ul>
+              </li>
+              <li><a href="..\Login\login.html">Login  &nbsp;<i class="fas fa-sign-in-alt"></i></a></li>
+              <li><a href="..\gallery\gallery.html">Gallery  &nbsp;<i class="far fa-images"></i></a></li>
+              <li id="login"></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+      <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="from.css" type="text/css">
+<div class="body-content">
+  <div class="module">
+
+
+    <h1><font face="rabelo" color="white" >Please Register Yourself</h1></font><br>
+    <form class="form" action="form.php" method="post" enctype="multipart/form-data" autocomplete="on">
+      <div class="alert alert-error"></div>
+
+      <div> <input type="text" placeholder="First Name" name="firstname"  onkeypress="return checkNum(event)" required /> <input type="text" placeholder="Last Name" name="lastname" onkeypress="return checkNum(event)" required /> </div>
+
+      <input placeholder="Date of Birth" type="text" onfocus="(this.type='date')"  name="bday" 
+      min="1900-01-01" max="2010-12-31"  required /> <br>
+
+      <select placeholder="gender" name="gender" selected required>
+        <option selected disabled value>-- Select Gender --</option>
+        <option value="M">MALE</option>
+        <option value="F">FEMALE</option>
+        <option value"T">Prefer Not to reveal</option>
+      </select>
+<br><br>
+     <font face="rabelo" color="white">Course Opted:</font> <select placeholder="Course" name="Course" required=>
+                                        <option disabled selected>-- Please Select Your Course</option>
+                                        <option value="BE">Bachelor of Engineering (BE)</option>
+                                        <option value="MTECH">Master of Technology (M.TECH)</option> 
+                                        <option value="MTECH">Master of Computer Applications (MCA)</option>  
+                                        </select> 
+
+         <input type="text" placeholder="Roll Number" name="roll" onkeypress="return isNumberKey(event)" maxlength="12" required />
+
+      <input placeholder="Year of Graduation" type="text" onfocus="(this.type='date')" min="1929-01-01" max="2018-12-31"  name="grad" required />
+
+      <br> <br>
+
+       <input type="email" placeholder="Email" name="email" required />
+
+      <input type="password" placeholder="Password" name="password" autocomplete="new-password" minlength="8" required />
+
+      <input type="password" placeholder="Confirm Password" name="confirmpassword" autocomplete="new-password" minlength="8" required />
+
+   <div class="g-recaptcha" data-sitekey="6LetwmgUAAAAAHQsMvcfWoEf9W-u9H_Dp-gBCIAm" required></div> <br>
+
+      <input type="submit" value="Register" name="register" class="btn btn-block btn-primary " href="C:\xampp\Profile\profile.php" />
+    </form>
+  </div>
+</div>
+ 
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
