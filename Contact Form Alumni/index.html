@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+
+	<link rel="stylesheet" type="text/css" href="nav.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+
+	<title>Contact Us</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="all.css">
+	<script type="text/javascript" src="all.js"></script>
+
+
+<!--====
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!--===============================================================================================-->
+</head>
+<body>
+
+
+	<div style="font-family: verdana; min-width:1024px;" id="main">
+		<nav id="nav" class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+			<img class="navbar-brand text-center center-block" id="img" src="logo2.png">
+		
+
+				<a href="#" id="name"  class="navbar-brand"><font face="rabelo" size=6><b> OU CSE Alumni Association </b></font></a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-nav-demo">
+				
+				<ul id="ab" class="nav navbar-nav navbar-right">
+					<li><a href="..\Home\home.html">Home &nbsp;<i class="fas fa-home"></i></a></li>
+					<li><a href="..\AboutUs\aboutus.html">Info  &nbsp;<i class="fas fa-info"></i></a>
+						<ul class="dropdown">
+							<li><a href="..\AboutUs\aboutus.html">About Us</a></li>
+							<li><a href="..\Contact Form Alumni\index.html">Contact Us</a></li>
+							<li><a href="..\meet-the-team\index.html">Executive Body</a></li>
+						</ul>
+					</li>
+					<li><a href="..\Login\login.html">Login  &nbsp;<i class="fas fa-sign-in-alt"></i></a></li>
+					<li><a href="..\gallery\gallery.html">Gallery  &nbsp;<i class="far fa-images"></i></a></li>
+					<li id="login"></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		
+		<br><br><br><br><br>
+
+
+	<div class="container-contact100">
+		<div class="contact100-map" id="google_map" data-map-x="17.407827" data-map-y="78.520071" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
+
+		<div class="wrap-contact100">
+			<div class="contact100-form-title" style="background-image: url(images/bg-03.jpg);">
+				<span class="contact100-form-title-1">
+					Contact Us
+				</span>
+
+				<span class="contact100-form-title-2">
+					Feel free to drop us a line below! <br><br>
+					thirupathi.m@uceou.edu<br>
+					91-9949026291
+				</span>
+			</div>
+
+			<form class="contact100-form validate-form" action="contactus.php" method="post" enctype="multipart/form-data" autocomplete="off">
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100">Full Name:</span>
+					<input class="input100" type="text" name="name" placeholder="Enter full name">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<span class="label-input100">Email:</span>
+					<input class="input100" type="text" name="email" placeholder="Enter email addess">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Phone is required">
+					<span class="label-input100">Phone:</span>
+					<input class="input100" type="text" name="phone" placeholder="Enter phone number">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+					<span class="label-input100">Message:</span>
+					<textarea class="input100" name="message" placeholder="Your Comment..."></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button name="submit" class="contact100-form-btn">
+						<span>
+							Submit
+							
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="container-contact100">
+		<div class="contact100-map" id="google_map" data-map-x="17.407827" data-map-y="78.520071" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
+
+		<div class="wrap-contact100">
+			<div class="contact100-form-title" style="background-image: url(images/bg-02.jpg);">
+				<span class="contact100-form-title-1">
+					Report USER
+				</span>
+
+				</div>
+
+			<form class="contact100-form validate-form" id="target" action="contactus.php" method="post" enctype="multipart/form-data" autocomplete="off">
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100">Full Name:</span>
+					<input class="input100" type="text" name="name1" placeholder="Enter full name">
+					<span class="focus-input100"></span>
+				</div>
+
+				<form class="contact100-form validate-form" action="C:\xampps\htdocs\login\contactus.php" method="post" enctype="multipart/form-data" autocomplete="off">
+				<div class="wrap-input100 validate-input" data-validate="Roll Number is required">
+					<span class="label-input100">Roll Number:</span>
+					<input class="input100" type="text" name="rollno1" placeholder="Enter Roll Number">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+					<span class="label-input100">Message:</span>
+					<textarea class="input100" name="message1" placeholder="Why do you want to reort this user"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button name="report" class="contact100-form-btn">
+						<span>
+							<font color="red"> REPORT </font>
+						</span>
+					</button>
+				</div>
+			</form>
+
+				
+
+
+
+
+
+
+
+</body>
+</html>
