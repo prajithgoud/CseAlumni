@@ -1,1 +1,2 @@
-# CseAlumni
+# Alumni
+Alumni Association Website
